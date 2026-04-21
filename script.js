@@ -19,11 +19,11 @@ window.onload = function(){
 }
 form.addEventListener("submit",(e)=>{
 	e.preventDefault()
-	// alert(`Logged in as ${username.value}`)
+	alert(`Logged in as ${username.value}`)
 	if(check.checked){
 	localStorage.setItem("username", username.value)
 	localStorage.setItem("password", password.value)
-	existingBtn.style.display = "block";
+	existingUser.style.display = "block";
 		
 	}
 	else{
